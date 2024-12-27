@@ -1,0 +1,28 @@
+@import './variables/color';
+body{
+    font-family: "Quicksand", serif;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-item a:hover {
+    color: #007bff;
+}
+.navbar {
+    justify-content: space-between;
+}
+.center-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-purple{
+    background-color: lighten(#000075, 73%);
+}
