@@ -30,6 +30,19 @@ body{
 .bg-purple{
     background-color: lighten(#000075, 73%);
 }
+.nav-pills{
+    .nav-item{
+       
+        .nav-link{
+            &:not(.active){
+                @extend .text--accent--65;
+            }
+            &:is(.active){
+                @extend .bg__accent--65;
+            }
+        }
+    }
+}
 /* Reduce font size on smaller screens */
 @media (max-width: 576px) {
     .responsive-title {
