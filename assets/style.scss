@@ -35,10 +35,12 @@ body{
        
         .nav-link{
             &:not(.active){
-                @extend .text--accent--65;
+                color: white;
             }
             &:is(.active){
-                @extend .bg__accent--65;
+                background-color: white;
+                @extend .text--accent--65;
+                border-radius: 0.5rem;
             }
         }
     }

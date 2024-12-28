@@ -61,12 +61,12 @@
   color: rgba(0, 0, 209, 0.7);
 }
 
-.bg__accent--65, .nav-pills .nav-item .nav-link:is(.active) {
+.bg__accent--65 {
   background-color: rgba(0, 0, 209, 0.65);
   color: white;
 }
 
-.text--accent--65, .nav-pills .nav-item .nav-link:not(.active) {
+.text--accent--65, .nav-pills .nav-item .nav-link:is(.active) {
   color: rgba(0, 0, 209, 0.65);
 }
 
@@ -612,6 +612,14 @@ body {
 
 .bg-purple {
   background-color: #eaeaff;
+}
+
+.nav-pills .nav-item .nav-link:not(.active) {
+  color: white;
+}
+.nav-pills .nav-item .nav-link:is(.active) {
+  background-color: white;
+  border-radius: 0.5rem;
 }
 
 /* Reduce font size on smaller screens */
