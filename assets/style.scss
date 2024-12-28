@@ -22,7 +22,24 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-
+.courses-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 .bg-purple{
     background-color: lighten(#000075, 73%);
+}
+/* Reduce font size on smaller screens */
+@media (max-width: 576px) {
+    .responsive-title {
+        font-size: 1rem; /* Smaller title font size */
+    }
+    .responsive-text {
+        font-size: 0.83rem; /* Smaller text font size */
+    }
+    .courses-img{
+        width: 100px;
+        object-fit: cover;
+    }
 }

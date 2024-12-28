@@ -603,6 +603,28 @@ body {
   transform: translateX(-50%);
 }
 
+.courses-img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .bg-purple {
   background-color: #eaeaff;
+}
+
+/* Reduce font size on smaller screens */
+@media (max-width: 576px) {
+  .responsive-title {
+    font-size: 1rem; /* Smaller title font size */
+  }
+  .responsive-text {
+    font-size: 0.83rem; /* Smaller text font size */
+  }
+  .courses-img {
+    width: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
