@@ -589,6 +589,10 @@ body {
   font-weight: bold;
 }
 
+.logo {
+  width: 200px;
+}
+
 .nav-item a:hover {
   color: #007bff;
 }
@@ -634,5 +638,8 @@ body {
     width: 100px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .logo {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
