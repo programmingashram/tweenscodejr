@@ -618,6 +618,20 @@ body {
   background-color: #eaeaff;
 }
 
+.layer {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/612/753/non_2x/wildlife-background-concept-free-vector.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tiger {
+  width: 112px;
+  top: -54px;
+  z-index: 1;
+}
+
 .nav-pills .nav-item .nav-link:not(.active) {
   color: white;
 }
