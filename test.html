@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Learning Coding - Cartoonish Benefits</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Optional: Add a fun, cartoonish font and some extra styling */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ff6347;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        #myChart {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .chart-container {
+            background-color: #ffebcd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-description {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .fun-icons {
+            font-size: 1.5rem;
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Why Kids Should Learn Coding and Start Their Career in IT</h2>
+
+    <!-- Cartoonish Chart Container -->
+    <div class="chart-container">
+        <canvas id="myBarChart"></canvas>
+    </div>
+
+    <div class="chart-description">
+        <h3>Fun Reasons for Kids to Learn Coding:</h3>
+        <ul>
+            <li><i class="fun-icons">💡</i> Problem Solving</li>
+            <li><i class="fun-icons">🎨</i> Creativity</li>
+            <li><i class="fun-icons">🚀</i> Future Job Opportunities</li>
+            <li><i class="fun-icons">💪</i> Confidence</li>
+            <li><i class="fun-icons">🌐</i> Tech Literacy</li>
+            <li><i class="fun-icons">🧠</i> Logical Thinking</li>
+        </ul>
+    </div>
+
+    <script>
+        var ctx = document.getElementById('myBarChart').getContext('2d');
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Problem Solving', 'Creativity', 'Future Job Opportunities', 'Confidence', 'Tech Literacy', 'Logical Thinking'],
+                datasets: [{
+                    label: 'Benefits of Learning Coding',
+                    data: [85, 75, 90, 80, 95, 88],
+                    backgroundColor: [
+                        '#fdd835', // Yellow
+                        '#66bb6a', // Green
+                        '#42a5f5', // Blue
+                        '#ff7043', // Orange
+                        '#ab47bc', // Purple
+                        '#ffca28'  // Amber
+                    ],
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                    barPercentage: 0.8,
+                    categoryPercentage: 0.6
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 14,
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 14,
+                            }
+                        }
+                    }
+                },
+                elements: {
+                    bar: {
+                        borderRadius: 12,
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

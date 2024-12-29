@@ -76,4 +76,31 @@ body{
     .logo{
         width: 150px;
     }
+    .d .d-flex.justify-content-start {
+        justify-content: flex-start !important;
+    }
+}
+ /* Custom styles */
+ .fun-icons {
+    font-size: 2rem;
+    color: #ff69b4;
+}
+
+.card-custom {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fce4ec;
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .fun-icons {
+        font-size: 1.2rem
+    }
 }
