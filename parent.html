@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TweensCode Jr - Coding, IoT, Graphic Design, Game Development, Crafting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animate-number@0.0.14/jquery.animateNumber.min.js"></script>
+</head>
+<body>
+   <div class="header-area  position-sticky top-0 z-3">
+    <div class="py-2 bg__accent--60 d-flex align-items-center justify-content-center text-center text-light">
+        <p class="mb-0 small-text d-none fw-bold d-lg-block">
+            Start your coding journey with fun and interactive lessons.  
+            <a href="#" class="text-decoration-underline text-light">START YOUR FREE TRIAL</a>
+        </p>
+        <p class="mb-0 small-text d-block d-lg-none fw-bold">
+            <a href="#" class="text-decoration-underline fw-bold text-light">START YOUR FREE TRIAL</a>
+        </p>
+        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <div class="container position-relative">
+            <!-- Center Logo -->
+            <a class="navbar-brand  d-lg-block d-none" href="index.html"><img src="./imags/TweensCode jr (3).png" alt="" class="logo"></a>
+    
+            <!-- Mobile Logo -->
+            <a class="navbar-brand  d-block d-lg-none" href="index.html"><img src="./imags/TweensCode jr (3).png" alt="" class="logo"></a>
+    
+            <!-- Left Menu -->
+            <button
+                class="navbar-toggler ms-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="parent.html">Parents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Educators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Right Buttons -->
+            <div class="d-lg-flex d-none">
+                <a href="#" class="btn btn-outline-primary me-2 rounded-3">Login</a>
+                <a href="#" class="btn btn-primary bg__accent--60 border-0 rounded-3">Start Your Free Trial</a>
+            </div>
+        </div>
+    </nav>
+   </div>
+   <section class="container py-5">
+    <div class="row align-items-center">
+      <!-- Left Column with Text -->
+      <div class="col-md-6">
+        <h2 class="mb-3 text--accent--60 display-5 fw-bold">Hey Parent,</h2>
+        <h3 class="mb-4 text-dark">Why Coding Matters for Your Kids</h3>
+        <p class="text-dark fs-5">
+          Coding helps kids build creativity, problem-solving skills, and logical thinking. It’s not just for tech careers—it’s a key skill for any future path!
+        </p>
+        <!-- Button to check discussion -->
+        <a href="#discussionAccordion" class="btn btn-primary bg__accent--60 btn-lg mt-4">Let’s Check a Discussion of Parents</a>
+      </div>
+      
+      <!-- Right Column with Image -->
+      <div class="col-md-6">
+        <img src="https://media.istockphoto.com/id/636071094/vector/family-talking-with-teacher.jpg?s=612x612&w=0&k=20&c=4uijL-5czbIPmrjeSA6DIdpz7X8zxcxPXYkpw-JG3hI=" class="img-fluid rounded" alt="Coding for Kids">
+      </div>
+    </div>
+</section>
+
+
+  <section class="container my-5 py-5" id="discussionAccordion">
+    <div class="row">
+      <!-- Section Heading -->
+      <div class="col-12 mb-4">
+        <h2 class="text-dark text-center display-5 fw-bold">Why Coding is Important for Your Child: A Fun Discussion</h2>
+      </div>
+  
+      <!-- Discussion Section -->
+      <div class="col-12">
+        <div class="accordion" id="discussionAccordion">
+            <!-- Discussion Card -->
+            <div class="accordion-item rounded-3 shadow-sm border-0 bg-light mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-light bg__accent--65 rounded-3 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <strong class="text--accent--65">Mentor & Parent Discussion / मेंटर और अभिभावक की चर्चा</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse  collapse show" aria-labelledby="headingOne" data-bs-parent="#discussionAccordion">
+                <div class="accordion-body   text-dark p-4 bg-light rounded-3">
+                  <p class="mb-3"><strong>Rajesh:</strong> "I’ve heard a lot about coding, but I’m not sure why it’s so important for my child. How does coding help them in the future?"</p>
+                  <p class="mb-3"><strong>राजेश:</strong> "मैंने कोडिंग के बारे में बहुत सुना है, लेकिन मुझे यह नहीं समझ में आ रहा कि यह मेरे बच्चे के लिए इतना महत्वपूर्ण क्यों है। कोडिंग उनके भविष्य में कैसे मदद करेगा?"</p>
+                  
+                  <p class="mb-3"><strong>Sarah:</strong> "That's a great question, Rajesh! Coding is like learning a new language, but instead of speaking to people, your child will be speaking to computers. It's not just for future programmers or tech experts—coding helps children develop problem-solving skills, logical thinking, and creativity. These are skills they can use in any field, whether it's medicine, art, or business."</p>
+                  <p class="mb-3"><strong>सारा:</strong> "यह एक बेहतरीन सवाल है, राजेश! कोडिंग एक नई भाषा सीखने जैसा है, लेकिन इसमें आपके बच्चे को कंप्यूटर से बात करनी होती है, न कि लोगों से। यह सिर्फ भविष्य के प्रोग्रामर या तकनीकी विशेषज्ञों के लिए नहीं है—कोडिंग बच्चों को समस्या हल करने, तार्किक सोच और रचनात्मकता जैसी महत्वपूर्ण क्षमताएं विकसित करने में मदद करता है। ये क्षमताएं वे किसी भी क्षेत्र में इस्तेमाल कर सकते हैं, चाहे वह चिकित्सा हो, कला हो या व्यवसाय।"</p>
+                  
+                  <p class="mb-3"><strong>Rajesh:</strong> "I see. But is it really necessary at such a young age?"</p>
+                  <p class="mb-3"><strong>राजेश:</strong> "मैं समझता हूँ। लेकिन क्या यह इतनी छोटी उम्र में सच में जरूरी है?"</p>
+                  
+                  <p class="mb-3"><strong>Sarah:</strong> "Absolutely! The earlier kids start learning coding, the more it becomes second nature to them. It's not just about creating apps or websites. It’s about giving them the tools to think critically, break down complex problems, and approach challenges with a creative mindset. In today’s world, those skills are valuable no matter what profession they choose."</p>
+                  <p class="mb-3"><strong>सारा:</strong> "बिल्कुल! जितनी जल्दी बच्चे कोडिंग सीखना शुरू करते हैं, उतना ही यह उनके लिए स्वाभाविक बन जाता है। यह सिर्फ ऐप्स या वेबसाइट बनाने के बारे में नहीं है। यह उन्हें आलोचनात्मक सोचने, जटिल समस्याओं को हल करने और रचनात्मक सोच के साथ चुनौतियों का सामना करने के उपकरण देता है। आज की दुनिया में, ये क्षमताएं किसी भी पेशे में उपयोगी हैं जो वे चुनते हैं।"</p>
+                  
+                  <p class="mb-3"><strong>Rajesh:</strong> "That sounds amazing. So, it's not just about technology?"</p>
+                  <p class="mb-3"><strong>राजेश:</strong> "यह अद्भुत लगता है। तो, क्या यह सिर्फ तकनीकी के बारे में नहीं है?"</p>
+                  
+                  <p class="mb-3"><strong>Sarah:</strong> "Exactly! Coding empowers children to think logically and systematically, but it also fosters creativity. And with the world becoming more digital, it’s crucial for kids to learn the skills that will help them adapt and thrive in the future."</p>
+                  <p class="mb-3"><strong>सारा:</strong> "बिलकुल! कोडिंग बच्चों को तार्किक रूप से सोचने और व्यवस्थित रूप से समस्याओं को हल करने का अधिकार देती है, लेकिन यह रचनात्मकता को भी बढ़ावा देती है। और जब दुनिया अधिक डिजिटल होती जा रही है, तो बच्चों के लिए इन कौशलों को सीखना महत्वपूर्ण है, जो उन्हें भविष्य में अनुकूलित और समृद्ध होने में मदद करेंगे।"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+
+  <div class="layer mt-4" >
+    <section class="py-5 bg__accent--60  text-white">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-4">
+                <h2 class="display-5 fw-bold text-white">Coding Courses for Kids</h2>
+                <p class="text-white">Fun and exciting learning for all ages!</p>
+            </div>
+    
+            <ul class="nav nav-pills justify-content-center mb-4" id="curriculumTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-4 py-2 px-md-5 py-md-3 fs-6 fs-md-4" id="age8-12-pill" data-bs-toggle="pill" data-bs-target="#age8-12" type="button" role="tab" aria-controls="age8-12" aria-selected="true">
+                        <span class="fw-bold">08 - 12 Years</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 py-2 px-md-5 py-md-3 fs-6 fs-md-4" id="age13-16-pill" data-bs-toggle="pill" data-bs-target="#age13-16" type="button" role="tab" aria-controls="age13-16" aria-selected="false">
+                        <span class="fw-bold">13 - 16 Years</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 py-2 px-md-5 py-md-3 fs-6 fs-md-4" id="age18plus-pill" data-bs-toggle="pill" data-bs-target="#age18plus" type="button" role="tab" aria-controls="age18plus" aria-selected="false">
+                        <span class="fw-bold">18+ (Young Adults)</span>
+                    </button>
+                </li>
+            </ul>
+            
+            
+    
+            <!-- Tab Content -->
+            <div class="tab-content" id="curriculumTabsContent">
+                <!-- Ages 08 - 12 -->
+                <div class="tab-pane fade show active" id="age8-12" role="tabpanel" aria-labelledby="age8-12-pill">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <!-- Card Image -->
+                                <div class="mb-3">
+                                    <img src="https://projects-static.raspberrypi.org/projects/scratch-3-phrasebook/7293ce80d65a13805477a58dd4ee093f8e11759e/en/images/banner.png" alt="Card Image" class="img-fluid rounded-top" style="width: 100%;height: 240px; object-fit: cover;">
+                                </div>
+                                
+                                <!-- Card Content -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-code bg--accent--65 rounded-4 me-3 text--accent--65 fs-2"></i>
+                                    <h5 class="fw-bold text-dark mb-0">Basics of Coding</h5>
+                                </div>
+                                <p class="text-muted">Explore fun puzzles and learn coding basics with exciting, interactive activities using Scratch and Tynker.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold text--dark--65 fw-bold">
+                                    <li><i class="fas text--dark--80 fa-arrow-right me-2"></i> Learn simple algorithms and loops</li>
+                                    <li><i class="fas text--dark--80 fa-paint-brush me-2"></i> Animate your characters</li>
+                                    <li><i class="fas text--dark--80 fa-gamepad me-2"></i> Build your first simple game</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex align-items-center">
+                                    <li><img src="https://ih1.redbubble.net/image.361352992.9279/raf,360x360,075,t,fafafa:ca443f4786.u4.jpg" alt="Scratch" class="me-2" style="width: 50px;"></li>
+                                    <li><img src="https://www.tynker.com/projects/screenshot/5ce46b62cebfbd5dc9777a4d/tynker-logo.png" alt="Tynker" class="me-2" style="width: 50px;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <div class="mb-3">
+                                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/93524133055291.56a647edb8436.jpg" alt="Card Image" class="img-fluid rounded-top" style="width: 100%; height: 240px;; object-position:40% 0; object-fit: cover;">
+                                </div> 
+                               
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-paint-brush text--accent--65 me-3 fs-2"></i>
+                                    <h5 class="fw-bold text-dark mb-0">Creative Web Pages</h5>
+                                </div>
+                                <p class="text-muted">Design colorful, fun websites using playful templates that bring imagination to life with Canva.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold">
+                                    <li><i class="fas text--accent--65 fa-palette me-2"></i> Design simple, colorful websites</li>
+                                    <li><i class="fas text--accent--65 fa-laptop-code me-2"></i> Learn basic HTML and CSS</li>
+                                    <li><i class="fas text--accent--65 fa-pencil-alt me-2"></i> Create interactive forms and quizzes</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex">
+                                    <li><img src="https://icons.iconarchive.com/icons/martz90/hex/512/html-5-icon.png" alt="HTML5" class="me-2" style="width: 50px;"></li>
+                                    <li><img src="https://cdn.iconscout.com/icon/free/png-256/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-programming-langugae-language-pack-logos-icons-1175237.png" alt="Google Sites" class="me-2" style="width: 50px;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+               <!-- Ages 13 - 16 -->
+                <div class="tab-pane fade" id="age13-16" role="tabpanel" aria-labelledby="age13-16-pill">
+                    <div class="row g-4">
+                        <!-- Web Development -->
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <div class="mb-3">
+                                    <img src="https://i.pinimg.com/736x/ea/1b/f7/ea1bf7eeb8340c85afd74e441e940065.jpg" alt="Card Image" class="img-fluid rounded-top" style="width: 100%; height: 240px; object-fit: cover;">
+                                </div>
+                               
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-code me-3 fs-2 text--accent--65" ></i>
+                                    <h5 class="fw-bold text-dark mb-0">Web Development</h5>
+                                </div>
+                                <p class="text-muted">Learn to build dynamic websites and applications using popular programming languages and frameworks.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold">
+                                    <li><i class="fas fa-check-circle me-2"></i> Understand the basics of HTML, CSS, and JavaScript</li>
+                                    <li><i class="fas fa-check-circle me-2"></i> Create interactive websites with Python and Scratch</li>
+                                    <li><i class="fas fa-check-circle me-2"></i> Develop and deploy a functional web application</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex">
+                                    <li><img src="https://icons.iconarchive.com/icons/martz90/hex/512/html-5-icon.png" alt="HTML" class="me-2" style="width: 50px; height: 50px;  object-fit: cover;"></li>
+                                    <li><img src="https://icons.veryicon.com/png/o/application/skills-section/css3-5.png" alt="CSS" class="me-2" style="width: 50px; height: 50px;  object-fit: cover;"></li>
+                                    <li><img src="https://static.vecteezy.com/system/resources/previews/048/332/149/non_2x/js-icon-transparent-background-free-png.png" alt="JavaScript" class="me-2" style="width: 50px; height: 50px;  object-fit: cover;"></li>
+                                    <li><img src="https://static.vecteezy.com/system/resources/thumbnails/044/764/384/small_2x/python-programing-language-icon-3d-rendering-illustration-png.png" alt="Python" class="me-2" style="width: 50px; height: 50px;  object-fit: cover;"></li>
+                                    <li><img src="https://images.squarespace-cdn.com/content/v1/5a3aa4bed74cffad5a2811ee/1607704399754-R60KDDYNP9T5LD1RA358/Scratch+icon.png" alt="Scratch" class="me-2" style="width: 50px; height: 50px; object-fit: cover;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Game Development -->
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <div class="mb-3">
+                                    <img src="https://connectedcamps.com/wp-content/uploads/2020/06/Game-Design-in-Roblox_Course.png" alt="Card Image" class="img-fluid rounded-top" style="width: 100%; height: 240px; object-fit: cover;">
+                                </div> 
+                                
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-gamepad me-3 text--accent--65 fs-2"></i>
+                                    <h5 class="fw-bold text-dark mb-0">Game Development</h5>
+                                </div>
+                                <p class="text-muted">Create your own video games with fun challenges and learn the skills of game development using Unity or Roblox Studio.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold">
+                                    <li><i class="fas fa-puzzle-piece me-2"></i> Build interactive characters and environments</li>
+                                    <li><i class="fas fa-cogs me-2"></i> Learn game mechanics and coding logic</li>
+                                    <li><i class="fas fa-gamepad me-2"></i> Create a playable game and test it</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex">
+                                    <li><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/unity-game-engine-icon.png" alt="Unity" class="me-2" style="width: 50px; height: 50px; object-fit: cover;"></li>
+                                    <li><img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/6/2/f/62f64963b3b8eda573996bdfb646729e818ef77b.png" alt="Roblox Studio" class="me-2" style="width: 50px; height: 50px; object-fit: cover;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Graphic Design -->
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <div class="mb-3">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/002/396/653/non_2x/funny-kid-flying-on-colorful-pencil-vector.jpg" alt="Card Image" class="img-fluid rounded-top" style="width: 100%; height: 240px; object-fit: cover;">
+                                </div>
+                               
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-paint-brush me-3 text--accent--65 fs-2" ></i>
+                                    <h5 class="fw-bold text-dark mb-0">Graphic Design</h5>
+                                </div>
+                                <p class="text-muted">Learn professional design skills and create stunning visuals with Adobe tools.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold">
+                                    <li><i class="fas fa-paint-brush me-2"></i> Master Photoshop and Illustrator basics</li>
+                                    <li><i class="fas fa-pen-alt me-2"></i> Design logos, banners, and posters</li>
+                                    <li><i class="fas fa-font me-2"></i> Understand color theory and typography</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex">
+                                    <li><img src="https://w7.pngwing.com/pngs/19/627/png-transparent-adobe-photoshop-cs-logo-tools-design-flat-icon-thumbnail.png" alt="Photoshop" class="me-2" style="width: 50px; height: 50px; object-fit: cover;"></li>
+                                    <li><img src="https://kids.kiddle.co/images/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/300px-Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator" class="me-2" style="width: 50px; height: 50px; object-fit: cover;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+    
+                <!-- Ages 18+ -->
+                <div class="tab-pane fade" id="age18plus" role="tabpanel" aria-labelledby="age18plus-pill">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <div class="mb-3">
+                                    <img src="https://img.freepik.com/premium-photo/adorable-programming-cartoon-characters_1121478-3392.jpg?semt=ais_hybrid" alt="Card Image" class="img-fluid rounded-top" style="width: 100%; height: 240px; object-fit: cover;">
+                                </div> 
+                               
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-laptop-code me-3 fs-2 text--accent--65"></i>
+                                    <h5 class="fw-bold text-dark mb-0">Advanced Coding</h5>
+                                </div>
+                                <p class="text-muted">Dive deep into programming with languages like Python, JavaScript, and learn how to build real applications.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold text--dark--65 fw-bold">
+                                    <li><i class="fas fa-code me-2"></i> Learn advanced algorithms and OOP</li>
+                                    <li><i class="fas fa-laptop-code me-2"></i> Build web apps with React and Node.js</li>
+                                    <li><i class="fas fa-lightbulb me-2"></i> Work on full-stack projects</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex">
+                                    <li><img src="https://via.placeholder.com/50/ffffff/000000?text=VSCode" alt="VS Code" class="me-2" style="width: 50px;"></li>
+                                    <li><img src="https://via.placeholder.com/50/ffffff/000000?text=ReactJS" alt="ReactJS" class="me-2" style="width: 50px;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 border rounded-3 shadow bg-white border-0">
+                                <div class="mb-3">
+                                    <img src="https://img.freepik.com/free-vector/online-games-addiction_52683-37384.jpg" alt="Card Image" class="img-fluid rounded-top" style="width: 100%; height: 240px; object-fit: cover;">
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-mobile-alt me-3 text--accent--65 fs-2"></i>
+                                    <h5 class="fw-bold text-dark">App Development</h5>
+                                </div>
+                                <p class="text-muted">Learn to create mobile apps with cross-platform tools and create functional, responsive designs.</p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold">
+                                    <li><i class="fas fa-mobile-alt me-2"></i> Learn mobile-first design principles</li>
+                                    <li><i class="fas fa-laptop me-2"></i> Build apps with Flutter or React Native</li>
+                                    <li><i class="fas fa-box me-2"></i> Integrate APIs and databases</li>
+                                </ul>
+                                <p class="d-none text--dark--65"><strong>Tools:</strong></p>
+                                <ul class="list-unstyled d-none text--dark--65 fw-bold d-flex">
+                                    <li><img src="https://via.placeholder.com/50/ffffff/000000?text=Flutter" alt="Flutter" class="me-2" style="width: 50px;"></li>
+                                    <li><img src="https://via.placeholder.com/50/ffffff/000000?text=ReactNative" alt="React Native" class="me-2" style="width: 50px;"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+</div>
+
+
+<section class="container py-5">
+    <div class="row align-items-center">
+      <!-- Left Column with Text -->
+      <div class="col-md-6">
+        <h3 class="mb-3 text-dark "><strong>Our Teaching Process:</strong> Guiding Your Child for a Bright Future</h3>
+        <p class="text-dark fs-5">
+          At <strong>TweensCode Jr.</strong>, we understand how important your child's future is. That's why our teaching process is designed to be engaging, nurturing, and focused on helping your child build essential skills for the future. Through our structured approach, we guide your child step by step, ensuring they gain confidence and knowledge in coding while having fun.
+        </p>
+      </div>
+  
+      <!-- Right Column with Image -->
+      <div class="col-md-6">
+        <img src="https://www.codingal.com/resources/wp-content/uploads/2021/06/tips-to-teach-kids-coding.png" class="img-fluid rounded" alt="Our Teaching Process">
+      </div>
+    </div>
+  
+    <!-- Steps of Teaching Process -->
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 border-0 rounded-3">
+          <div class="card-body">
+            <h5 class="card-title text-dark fw-bold">Step 1: Building a Strong Foundation</h5>
+            <p class="card-text text-dark">
+              In this first step, we focus on making sure your child understands the basics of coding in a simple and fun way. They will learn the core concepts that they can build on as they grow.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 border-0 rounded-3">
+          <div class="card-body">
+            <h5 class="card-title text-dark fw-bold">Step 2: Hands-on Exploration</h5>
+            <p class="card-text text-dark">
+              Once the basics are understood, your child will dive into small projects and activities that allow them to apply their new skills. This hands-on approach helps reinforce what they've learned and boosts their confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 border-0 rounded-3">
+          <div class="card-body">
+            <h5 class="card-title text-dark fw-bold">Step 3: Creative Problem-Solving</h5>
+            <p class="card-text text-dark">
+              As your child progresses, they will be challenged with more advanced projects that encourage creativity and problem-solving. This helps them develop critical thinking skills that will be useful in every aspect of their future, not just in coding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container my-5">
+      <h2 class="text-center display-5 fw-bold mb-4">What Your Child Can Create 🎨</h2>
+      <p class="text-muted text-center">Over 100+ games, apps, and projects created—and counting!</p>
+      <div class="owl-carousel owl-theme">
+        <!-- Card 1 -->
+        <div class="item">
+          <div class="project-card shadow-sm border-0 p-3">
+            <img src="https://play-lh.googleusercontent.com/Gs-YERoz_iCnED8qftLfba7HTH6KWfuDvnoU09rnuy2AjBRTDOdxmfMipLjlvHttFOs=w526-h296-rw" alt="Space Adventure Game" class="img-fluid" style="width: 100%; height: 240px; object-fit: cover;">
+            <div class="p-3">
+              <h5 class="card-title">Space Adventure Game</h5>
+              <p class="card-footer">Created by: Aarav</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="item">
+          <div class="project-card shadow-sm border-0 p-3">
+            <img src="https://images.bauerhosting.com/legacy/empire-images/features/560ec10750e6c513721c38f5/Totoro%20still.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80" alt="Cartoon Story" class="img-fluid" style="width: 100%; height: 240px; object-fit: cover;">
+            <div class="p-3">
+              <h5 class="card-title">Cartoon Story</h5>
+              <p class="card-footer">Created by: Kiara</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="item">
+          <div class="project-card shadow-sm border-0 p-3">
+            <img src="https://fgfactory.com/wp-content/uploads/2020/01/image-5.jpg" alt="3D Character Model" class="img-fluid" style="width: 100%; height: 240px; object-fit: cover;">
+            <div class="p-3">
+              <h5 class="card-title">3D Character Model</h5>
+              <p class="card-footer">Created by: Vivaan</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="item">
+          <div class="project-card shadow-sm border-0 p-3">
+            <img src="https://llllline.com/images/thumbs/chat/chatting-app-design-in-new-trends-ui-template-0000057130-800.jpeg" alt="Online Chatting App UI" class="img-fluid" style="width: 100%; height: 240px; object-fit: cover;">
+            <div class="p-3">
+              <h5 class="card-title">Online Chatting App UI</h5>
+              <p class="card-footer">Created by: Atharva</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container my-5">
+      <h2 class="text-center display-5 fw-bold mb-4">Certificates Your Child Can Earn 🎓</h2>
+      <p class="text-muted text-center">Recognition for your child's hard work and achievements!</p>
+      <div class="row text-center">
+        <!-- Certificate 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="https://www.rodocodo.com/wp-content/uploads/2021/12/certificate-small.png" alt="Certificate of Completion" class="card-img-top" style="height: 200px; object-fit: cover;width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Certificate of Completion</h5>
+              <p class="card-text">Awarded upon completing the course, recognizing your child's dedication and skills in coding.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="https://www.hackerkid.org/images/landingV2/demo-certificate/certificate-fundamental-python.webp" alt="Advanced Coding Certificate" class="card-img-top" style="height: 200px;width: 100%; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Advanced Coding Certificate</h5>
+              <p class="card-text">For students who excel and demonstrate advanced coding skills, preparing them for future tech careers.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0">
+            <img src="https://img.freepik.com/free-vector/memphis-duotone-finalist-contest-certificate_23-2149088459.jpg" alt="Creative Innovator Certificate" class="card-img-top" style="height: 200px;width: 100%; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Creative Innovator Certificate</h5>
+              <p class="card-text">Recognizes students who show exceptional creativity in their projects, showcasing problem-solving and innovation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-4">These certificates serve as a great addition to your child's portfolio and can help them stand out in future educational or professional opportunities.</p>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container my-5">
+      <h2 class="text-center fw-bold display-5 mb-4">Laptops Provided for Training 💻</h2>
+      <p class="text-muted text-center">We ensure your child has the tools they need for success!</p>
+      <div class="row align-items-center">
+        <!-- Laptop Image and Description -->
+        <div class="col-md-6 mb-4">
+          <img src="https://lh6.googleusercontent.com/proxy/7h1lHXESwOCb8wOHVS-Rq8L2-sEQpx_Qd1NAv_Blt36bU-PW84gc3_Nq7ltINpt9ukO989eD_tcRM_qaFfy_KNZz_Bd2j4v7mek6kmDg7Gp3mowEAXjj" alt="Laptop for Training" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mb-4">
+          <h5 class="fw-bold">Everything Your Child Needs to Succeed</h5>
+          <p class="text-muted">
+            To ensure that your child has the best learning experience, we provide laptops equipped with all the necessary software and tools for coding. 
+            No need to worry about purchasing expensive equipment or software—our training programs come with everything your child needs to get started and excel.
+          </p>
+          <ul class="list-unstyled">
+            <li><strong>Pre-Installed Coding Tools:</strong> Every laptop comes with the latest coding tools, ensuring a smooth and productive learning experience.</li>
+            <li><strong>Support for All Skill Levels:</strong> Whether your child is a beginner or more advanced, the laptops are configured to support a wide range of learning materials and projects.</li>
+            <li><strong>On-the-Go Learning:</strong> Laptops can be used at our training center or taken home, allowing your child to continue learning anytime, anywhere.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Agreement Section -->
+      <div class="alert bg__accent--60 text-left mt-4">
+        <h5 class="fw-bold">Important Agreement</h5>
+        <p>
+          As part of the program, each child will receive a laptop for training. Please note that you will be required to sign an agreement that includes the following conditions:
+        </p>
+        <ul class="list-unstyled">
+          <li><strong>Return of Laptop:</strong> The laptop must be returned in good condition at the end of the course.</li>
+          <li><strong>Responsibility for Damages:</strong> If the laptop is damaged or broken during the course, the parent or guardian will be responsible for the cost of repairs or replacement.</li>
+          <li><strong>Agreement Signature:</strong> A signed agreement will be required before receiving the laptop, outlining these responsibilities.</li>
+        </ul>
+        <p class="mt-3">
+          We appreciate your understanding and cooperation in helping us ensure a positive and smooth learning experience for all students.
+        </p>
+      </div>
+  
+      <p class="text-center mt-4">
+        We’re here to support your child every step of the way, providing the resources they need to thrive in the world of coding.
+      </p>
+    </div>
+  </section>
+  
+  <section class="py-5 bg--accent--65">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-4">
+            <h2 class="display-5 fw-bold text-dark">All Plans Offer:</h2>
+        </div>
+
+        <!-- Features List -->
+        <div class="row g-3 d">
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center mb-3 justify-content-start">
+                    <i class="fas fa-check-circle text--accent--65 me-3" style="font-size: 1.5rem;"></i>
+                    <span class="text-dark fw-medium">Exciting new activities added weekly</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center mb-3 justify-content-start">
+                    <i class="fas fa-check-circle text--accent--65 me-3" style="font-size: 1.5rem;"></i>
+                    <span class="text-dark fw-medium">Hundreds of interactive brain-teasers</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center mb-3 justify-content-start">
+                    <i class="fas fa-check-circle text--accent--65 me-3" style="font-size: 1.5rem;"></i>
+                    <span class="text-dark fw-medium">Opportunities to design their own games</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center mb-3 justify-content-start">
+                    <i class="fas fa-check-circle text--accent--65 me-3" style="font-size: 1.5rem;"></i>
+                    <span class="text-dark fw-medium">12 teacher-guided lessons at their own pace</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center mb-3 justify-content-start">
+                    <i class="fas fa-check-circle text--accent--65 me-3" style="font-size: 1.5rem;"></i>
+                    <span class="text-dark fw-medium">Detailed progress updates for parents</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center mb-3 justify-content-start">
+                    <i class="fas fa-check-circle text--accent--65 me-3" style="font-size: 1.5rem;"></i>
+                    <span class="text-dark fw-medium">Membership access for up to 3 kids</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center g-4 mt-4">
+            <!-- Annual Plan Card -->
+            <div class="col-md-6 col-lg-4 position-relative">
+                <img src="./imags/tiger.png" alt="" class="tiger position-absolute">
+              <div class="card shadow bg-primary-subtle border-primary position-relative">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold badge badge-lg bg__alert--60 text-dark">✨ New Year Offer: SAVE BIG! ✨</h5>
+                  <h4 class="fw-bold">Annual Plan</h4>
+                  <p class="text-muted">
+                    <span class="text-decoration-line-through">₹2,500.00/mo</span> <span class="fw-bold text-dark">₹1,333.00/mo</span>
+                  </p>
+                  <p>06-Day Free Trial</p>
+                  <p class="text-muted"> <span class="text-decoration-line-through">₹18,000</span> ₹16,000 billed every 12 months</p>
+                  <a href="#" class="btn btn-primary bg__accent--60 btn-lg">Start Free Trial</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Monthly Plan Card -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card shadow border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold badge badge-lg bg__accent--60 text-light">Basic Plan</h5>
+                  <h4 class="fw-bold">Monthly Plan</h4>
+                  <p class="fw-bold text-dark">₹1,500.00/mo</p>
+                  <p>06-Day Free Trial</p>
+                  <p class="text-muted">₹1,500 billed every month</p>
+                  <a href="#" class="btn btn-dark bg__accent--70 btn-lg">Start Free Trial</a>
+                </div>
+              </div>
+            </div>
+    </div>
+</section>
+  <script>
+    // Script to dynamically change button color based on accordion state
+    const accordionButton = document.querySelector('.accordion-button');
+    const accordionCollapse = document.querySelector('#collapseOne');
+  
+    accordionCollapse.addEventListener('show.bs.collapse', function () {
+      accordionButton.classList.add('text-dark', 'bg-white'); // Active state - white background
+      accordionButton.classList.remove('bg__accent--65', 'text-light'); // Remove previous styles
+    });
+  
+    accordionCollapse.addEventListener('hidden.bs.collapse', function () {
+      accordionButton.classList.remove('text-dark', 'bg-white'); // Revert back to default
+      accordionButton.classList.add('bg__accent--65', 'text-light'); // Original inactive state
+    });
+  </script>
+  
+  
+  
+  
+<hr>
+<!-- Footer Section -->
+<footer class="bg-white text-dark py-4">
+    <div class="container">
+      <div class="row">
+  
+        <!-- About Section Column -->
+        <div class="col-md-3">
+          <h5 class="fw-bold">About Us</h5>
+          <div>
+            <img src="./imags/TweensCode jr (3).png" alt="Logo" class="w-100 footer-logo mb-2">
+            <p>Our company provides the best services to help you achieve your goals. Located at 123 Example Street, City, Country.</p>
+          </div>
+        </div>
+  
+        <!-- Quick Links Column -->
+        <div class="col-md-3">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">About</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Column -->
+        <div class="col-md-3">
+          <h5 class="fw-bold">Follow Us</h5>
+          <div class="footer-social-icons">
+            <a href="#" class="text-dark fs-2 m-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-dark fs-2 m-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-dark fs-2 m-2"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-dark fs-2 m-2"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+  
+        <!-- Contact/Address Column -->
+        <div class="col-md-3">
+          <h5 class="fw-bold">Contact</h5>
+          <address>
+            Ashok Nagar,Near harsh kingdom, India<br>
+            Email: tweenscodejr@gmail.com<br>
+            Phone: (+91) 9343798829
+          </address>
+        </div>
+      </div>
+  
+      <!-- Copyright Section -->
+      <div class="text-center mt-4">
+        <p>&copy; 2025 tweenscodejr. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+    <script>
+        // Function to animate number counting
+        function animateNumber(element, start, end, duration) {
+          let startTime = null;
+      
+          function countUp(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+            const value = Math.min(start + (end - start) * (progress / duration), end);
+      
+            element.textContent = Math.floor(value);
+      
+            if (progress < duration) {
+              requestAnimationFrame(countUp);
+            } else {
+              element.textContent = end; // Ensure it ends exactly at the target number
+            }
+          }
+      
+          requestAnimationFrame(countUp);
+        }
+      
+        // Function to start counting
+        function startCounting() {
+          const learnersCounter = document.getElementById('learners-counter');
+          const mentorsCounter = document.getElementById('mentors-counter');
+          const projectsCounter = document.getElementById('projects-counter');
+          const happyParent = document.getElementById('happy-parent');
+      
+          animateNumber(learnersCounter, 0, 100, 2000);
+          animateNumber(mentorsCounter, 0, 50, 2000);
+          animateNumber(projectsCounter, 0, 500, 2000);
+          animateNumber(happyParent, 0, 99, 2000);
+        }
+      
+        // Detect when the section comes into view
+        const section = document.getElementById('achievements');
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              startCounting();
+              observer.unobserve(section); // Remove observer after animation
+            }
+          },
+          { threshold: 0.5 } // Trigger when 50% of the section is visible
+        );
+      
+        observer.observe(section);
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay: true,
+          dots: false,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+          }
+        });
+      });
+    </script>
+    <script>
+        var ctx = document.getElementById('myBarChart').getContext('2d');
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Problem Solving', 'Creativity', 'Future Job Opportunities', 'Confidence', 'Tech Literacy', 'Logical Thinking'],
+                datasets: [{
+                    label: 'Benefits of Learning Coding',
+                    data: [85, 75, 90, 80, 95, 88],
+                    backgroundColor: [
+                        '#fdd835', // Yellow
+                        '#66bb6a', // Green
+                        '#42a5f5', // Blue
+                        '#ff7043', // Orange
+                        '#ab47bc', // Purple
+                        '#ffca28'  // Amber
+                    ],
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                    barPercentage: 0.8,
+                    categoryPercentage: 0.6
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 14,
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                family: 'Comic Sans MS',
+                                size: 14,
+                            }
+                        }
+                    }
+                },
+                elements: {
+                    bar: {
+                        borderRadius: 12,
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
