@@ -1,127 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Learning Coding - Cartoonish Benefits</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        /* Optional: Add a fun, cartoonish font and some extra styling */
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #ff6347;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        #myChart {
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .chart-container {
-            background-color: #ffebcd;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .chart-description {
-            font-size: 1.2rem;
-            color: #555;
-        }
-
-        .fun-icons {
-            font-size: 1.5rem;
-            color: #ff69b4;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Include animateNumber.js -->
+  <script src="https://cdn.jsdelivr.net/npm/animate-number@0.0.14/jquery.animateNumber.min.js"></script>
+  
+  <style>
+    section {
+      min-height: 100vh;
+    }
+  </style>
 </head>
 <body>
 
-    <h2>Why Kids Should Learn Coding and Start Their Career in IT</h2>
+<!-- Achievements Section -->
+<section class="py-5 bg-light" id="achievements">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Our Achievements</h2>
+    <div class="row gy-4">
+      
+      <!-- Learners Count -->
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h1 class="text-primary fw-bold" id="learners-counter">0</h1>
+            <p class="h5 fw-semibold text-muted">Learners</p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Cartoonish Chart Container -->
-    <div class="chart-container">
-        <canvas id="myBarChart"></canvas>
+      <!-- Mentors Count -->
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h1 class="text-success fw-bold" id="mentors-counter">0</h1>
+            <p class="h5 fw-semibold text-muted">Mentors</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Completed Projects Count -->
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <h1 class="text-warning fw-bold" id="projects-counter">0</h1>
+            <p class="h5 fw-semibold text-muted">Completed Projects</p>
+          </div>
+        </div>
+      </div>
+      
     </div>
+  </div>
+</section>
 
-    <div class="chart-description">
-        <h3>Fun Reasons for Kids to Learn Coding:</h3>
-        <ul>
-            <li><i class="fun-icons">💡</i> Problem Solving</li>
-            <li><i class="fun-icons">🎨</i> Creativity</li>
-            <li><i class="fun-icons">🚀</i> Future Job Opportunities</li>
-            <li><i class="fun-icons">💪</i> Confidence</li>
-            <li><i class="fun-icons">🌐</i> Tech Literacy</li>
-            <li><i class="fun-icons">🧠</i> Logical Thinking</li>
-        </ul>
-    </div>
+<script>
+  // Function to start counting using animateNumber.js
+  function startCounting() {
+    $('#learners-counter').animateNumber({ number: 100 }, 2000);
+    $('#mentors-counter').animateNumber({ number: 50 }, 2000);
+    $('#projects-counter').animateNumber({ number: 500 }, 2000);
+  }
 
-    <script>
-        var ctx = document.getElementById('myBarChart').getContext('2d');
-        var myBarChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Problem Solving', 'Creativity', 'Future Job Opportunities', 'Confidence', 'Tech Literacy', 'Logical Thinking'],
-                datasets: [{
-                    label: 'Benefits of Learning Coding',
-                    data: [85, 75, 90, 80, 95, 88],
-                    backgroundColor: [
-                        '#fdd835', // Yellow
-                        '#66bb6a', // Green
-                        '#42a5f5', // Blue
-                        '#ff7043', // Orange
-                        '#ab47bc', // Purple
-                        '#ffca28'  // Amber
-                    ],
-                    borderColor: '#ffffff',
-                    borderWidth: 2,
-                    barPercentage: 0.8,
-                    categoryPercentage: 0.6
-                }]
-            },
-            options: {
-                plugins: {
-                    legend: {
-                        display: false,
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: {
-                            font: {
-                                family: 'Comic Sans MS',
-                                size: 14,
-                            }
-                        }
-                    },
-                    x: {
-                        ticks: {
-                            font: {
-                                family: 'Comic Sans MS',
-                                size: 14,
-                            }
-                        }
-                    }
-                },
-                elements: {
-                    bar: {
-                        borderRadius: 12,
-                    }
-                }
-            }
-        });
-    </script>
+  // Detect when the section comes into view
+  const section = document.getElementById('achievements');
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        startCounting();
+        observer.unobserve(section); // Remove observer after animation
+      }
+    },
+    { threshold: 0.5 } // Trigger when 50% of the section is visible
+  );
 
+  observer.observe(section);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
