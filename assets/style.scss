@@ -46,6 +46,18 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+.bottom-modal {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)  !important;
+    width: 90%;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
 .tiger{
     width: 112px;
     top: -54px;
