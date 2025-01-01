@@ -1164,7 +1164,7 @@
     </div>
   </footer>
 <!-- Modal -->
-<div class="modal fade rounded-4" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+<div class="modal  fade show rounded-4" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true" style="display: block;">
   <div class="modal-dialog rounded-4 modal-small bottom-modal">
     <div class="modal-content rounded-4">
       <div class="modal-header border-0 rounded-4">
@@ -1185,7 +1185,20 @@
       </div>
     </div>
   </div>
-</div>
+</div><script>
+  // Automatically show the modal on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('contactModal'));
+    myModal.show();
+
+    // Ensure modal can be closed properly
+    document.querySelectorAll('[data-bs-dismiss="modal"]').forEach(button => {
+      button.addEventListener('click', function() {
+        myModal.hide();
+      });
+    });
+  });
+</script>
 
     <script>
         // Function to animate number counting
